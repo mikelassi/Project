@@ -1,61 +1,60 @@
 # Food for thought
 
 
-# Abstract
-Food plays an important role in our everyday life. 
-However, we ofter underestimate its effect on our health and on the environment.
-Just thinking at how worldwide obesity has nearly tripled since 1975 or how palm oil consumption affects deforestation makes us wonder whether it's possible to change our eating habits to improve our life condition. 
-The project aims at giving insight on food categories that potentially are dangerous for the environment, for example by considering the packadge type or the presence of palm oil.
-Moreover, we would like to give nutritional scores for each product of the each category and observe if there are companies that have the monopoly for different product categories.
-At the end, based on the previuos analysis, the idea is to create a food advisor for each food categories in differet country.
+## Abstract
+Food plays an essential role in our everyday life. However, we ofter underestimate its effect on our health and on the environment.
+Just thinking at how worldwide [obesity has nearly tripled since 1975](http://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) or how [palm oil consumption affects deforestation](https://www.independent.co.uk/life-style/palm-oil-health-impact-environment-animals-deforestation-heart-a8505521.html) makes us wonder whether it is possible to change our eating habits to improve our's and world's life conditions. 
 
-# Research questions
+In order to move the first steps toward these changes, this projects has a double objective, pursued through the analysis of the [Open Food Facts](https://world.openfoodfacts.org/) database. First, it aims at giving insights on food categories that potentially are dangerous for the environment, for example by considering the package type or the presence of palm oil in it. The effect of possible monopolistic phenomena in food industry will also be analysed. Moreover, we will give nutritional scores for each product in various alimentation categories and we will assess the importance of some key nutrients (such as vitamins, cholesterol and others) in each product category.
+Finally, based on the previuos analysis, the idea is to create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
 
-Food for health
+## Research questions
 
-1)Which indicators should we use as nutritional score ?
-2)Is less healthy food mostly sold in certain Country?
-3)Are certain products made of the same ingredients?
+### Food for health
 
-Food for planet
-1)Are certain food categories associated with high enviromental damage ?
-2)Are there companies that have monopoly of certain products?
-3)Are there country more 'enviromental friendly'?
+1. Which indicators should be used as nutritional score?
+2. Is less healthy food mostly sold in certain countries?
+3. Are certain products made of the same ingredients?
 
-# Dataset
-The dataset used is: Open Food Facts(1.83 Gb).
-We can download the data set in different formats, but we'll chose the csv or MongoDB dump format.
+### Food for the planet
+1. Are certain food categories associated with high enviromental damage?
+2. Are there companies that have monopoly of certain products?
+3. Are there countries that are more 'enviromental friendly'?
 
-The data set is composed of different fields: we'll filter the one we are interested in like  'nutriments', 'ingredients_from_palm_oil_tag', 'countries_tag','nutrition_levels'.
-To handle the missing data, we'll consider the 'state_tags' that indicates the other missing fields.
-Moreover, we notice that most of listed products come from either France or USA.
-Hence, this could compromise cross country analysis.
+## Dataset
+The dataset used is: Open Food Facts (1.83 Gb).
+The data can be downloaded in different formats, but we will choose the .csv or MongoDB dump format.
 
-# A list of internal milestones up until project milestone 2
+The data set is composed of different fields: we'll filter the one we are interested in like  'nutriments', 'ingredients_from_palm_oil_tag', 'countries_tag','nutrition_levels'. In particular, information about the creator of the dataset entry, the creation time will be discarded.
+To handle the missing data, we'll consider the 'state_tags' field that indicates which other fields are missing.
+Moreover, we notice that most of listed products come from either France or USA. Hence, since this could compromise cross country analysis, we will either extend the dataset or avoid considering absolute counts of products.
 
-11/11/2018
+## A list of internal milestones up until project milestone 2
 
-1)Check how to open the File by MongoDB formats
-2)Data exploration: analyzing and cleaning data
-3)Check if there is a large number of missing values for fields of interest 
-4)General statistics for the field of interest (number of products sold in different country, number of products containing relevant nutritinal information)
+| 11/11/2018 | 18/11/2018 | 25/11/2018 |
+| 1. Check how to open the file in MongoDB formats |
+|2. Data exploration: analyzing and cleaning data |
 
-
-18/11/2018
-
-1)Find a way to handle the missing data(maybe using a complementary dataset)
-2)List and plot for each products belonging in different categories, their nutritional value, their packadge and their nutritional score and the owner company.
-3)For each country(if it's reasonable) visualize the products with all the caracterstics found in point 2).
-
-25/11/2018
-
-1)Define an index that summerizes the impact of each product on environemnt and health, based on the variables found the previous week.
-2)Analysis based on the insight on the actual data. 
-3)Update the Readme file.
+ 
+3. Check if there is a large number of missing values for fields of interest 
+4. General statistics for the field of interest (number of products sold in different country, number of products containing relevant nutritinal information)
 
 
-# Questions for TAa
-1)Is it possible to use the MongoDB as dataset? is it feasible to import it on Sparks or Pandas?
-2)Is it reasonable to search for country differences even if there are discrepancies in the number of products per country?
-3)Are the goals of our project broad enough? Are the reasearch questions detailed enough or should we limited in just part of them?
+
+
+1. Find a way to handle the missing data, if this results to be compromising the objectives of the project (maybe using a complementary dataset).
+2. List and plot for each products belonging in different categories, their nutritional value, their package type, their nutritional score and the owner company.
+3. For each country (if it's reasonable) visualize the products with all the caracterstics found in point 2.
+
+
+1. Define an index that summarizes the impact of each product on environemnt and health, based on the variables found the previous week.
+2. Analysis based on the insight on the actual data. 
+3. Update the Readme file.
+
+
+## Questions for TAs
+
+1. Is it possible to use the MongoDB as dataset? Is it feasible to import it on Spark or Pandas?
+2. Is it reasonable to search for country differences even if there are discrepancies in the number of products per country?
+3. Are the goals of our project broad enough? Are the research questions detailed enough?
 
