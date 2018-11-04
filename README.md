@@ -30,26 +30,11 @@ To handle the missing data, we'll consider the 'state_tags' field that indicates
 Moreover, we notice that most of listed products come from either France or USA. Hence, since this could compromise cross country analysis, we will either extend the dataset or avoid considering absolute counts of products.
 
 ## A list of internal milestones up until project milestone 2
-
-| 11/11/2018 | 18/11/2018 | 25/11/2018 |
-| 1. Check how to open the file in MongoDB formats |
-|2. Data exploration: analyzing and cleaning data |
-
- 
-3. Check if there is a large number of missing values for fields of interest 
-4. General statistics for the field of interest (number of products sold in different country, number of products containing relevant nutritinal information)
+| 05/11 - 11/11                                                                                                                                                                                                                                                                                                                                   | 12/11 - 18/11                                                                                                                                                                                                                                                                                                                                                                                                                       | 19/11 - 25/11                                                                                                                                                                                                              |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Check how to open the file in MongoDB formats 2. Data exploration: analyzing and cleaning data  3. Check if there is a large number of missing values for fields of interest  4. General statistics for the field of interest (number of products sold in different country,  number of products containing relevant nutritinal information) | 1. Find a way to handle the missing data,  if this results to be compromising the objectives of the project (maybe using a complementary dataset). 2. List and plot for each products belonging in different categories,  their nutritional value, their package type, their nutritional score and the owner company. 3. For each country (if it's reasonable) visualize the products  with all the caracterstics found in point 2. | 1. Define an index that summarizes the impact of each product on environemnt and health,  based on the variables found the previous week. 2. Analysis based on the insight on the actual data.  3. Update the Readme file. |
 
 
-
-
-1. Find a way to handle the missing data, if this results to be compromising the objectives of the project (maybe using a complementary dataset).
-2. List and plot for each products belonging in different categories, their nutritional value, their package type, their nutritional score and the owner company.
-3. For each country (if it's reasonable) visualize the products with all the caracterstics found in point 2.
-
-
-1. Define an index that summarizes the impact of each product on environemnt and health, based on the variables found the previous week.
-2. Analysis based on the insight on the actual data. 
-3. Update the Readme file.
 
 
 ## Questions for TAs
