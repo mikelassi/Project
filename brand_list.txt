@@ -42,7 +42,6 @@ Wonderful
 Foco
 Godiva
 Hershey’s
-
 Ajax
 Albert Menes
 Alpina
@@ -456,7 +455,6 @@ Régia Ferrero
 Reo
 Revillon
 Rians
-Ricard
 Richelet
 Riches Monts
 Ricola
