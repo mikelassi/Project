@@ -67,6 +67,6 @@ The distribution of the work between the team mates is the following:
  - Everybody did the preliminary analyis, the problem formulation, the cleaning of the dataset,  the datastory in html.
  - Elisabetta: 1. + 5.
  - Tom:        2. + 3. + 4.
- - Micheal:    1. + 5.
+ - Michael:    1. + 5.
 
 Everybody will work on the presentation.
