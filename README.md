@@ -7,13 +7,17 @@ Just thinking at how worldwide [obesity has nearly tripled since 1975](http://ww
 
 In order to move the first steps toward these changes, this projects has a double objective, pursued through the analysis of the [Open Food Facts](https://world.openfoodfacts.org/) database. 
 
- - **OUR FIRST IDEAS** At the beginning of the project we wanted to:
+ - **OUR FIRST IDEAS** 
+ 
+ At the beginning of the project we wanted to:
     + Give insights on food categories that potentially are dangerous for the environment, for example by considering the package type or the presence of palm oil in it.
     + Investigate possible monopolistic situation in food industry e.g when one product category is only sold by some companies.
     + Give nutritional scores for each product in various alimentation categories and we will assess the importance of some key nutrients (such as vitamins, cholesterol and others) in each product category.
     + Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
 
- - **OUR FINAL PROJECT** We had to reconsider our objectives after investigating the dataset. The final goals are:
+ - **OUR FINAL PROJECT** 
+ 
+ We had to reconsider our objectives after investigating the dataset (missing values, countries presence ect.). The final goals are:
     + Give insights on food categories regarding their nutrition content, impact on health (using a nutrition score called nutri-score) and their environmental impact (palm oil presence).
     + Provide a complete analysis of food brands in France. Each brand will be examined regarding the category of products it sells, if their are healthy or not and if they contain ingredient from palm oil. The analysis will focus on the 10 biggest french brands.
     + Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
@@ -24,21 +28,16 @@ The data can be downloaded in different formats, but we will choose the .csv or 
 
 The data set is composed of different fields: we filter the one we are interested in like 'nutriments', 'ingredients_from_palm_oil_tag', 'countries_en', 'nutrition_grade_fr'. In particular, information about the creator of the dataset entry, the creation time will be discarded.
 
-To handle the missing data, we'll consider the 'state_tags' field that indicates which other fields are missing.
-Moreover, we notice that most of listed products come from either France or USA. Hence, since this could compromise cross country analysis, we will either extend the dataset or avoid considering absolute counts of products.
+To handle the missing data, we will consider the 'state_tags' field that indicates which other fields are missing:
+- we noticed that most of listed products are sold from either France or USA. 
+- moreover, we observed that the nutritional score is present ONLY for french products.
+
+At the end, we chose to restrict the analysis to France. 
 
 ## A list of internal milestones up until project milestone 2
 | 05/11 - 11/11                                                                                                                                                                                                                                                                                                                                                    | 12/11 - 18/11                                                                                                                                                                                                                                                                                                                                                                                                                                  | 19/11 - 25/11                                                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1. Check how to open the file in MongoDB formats <br/> 2. Data exploration: analyzing and cleaning data <br/> 3. Check if there is a large number of missing values for fields of interest <br/> 4. General statistics for the field of interest <br/> (number of products sold in different country,  number of products containing relevant nutritinal information) | 1. Find a way to handle the missing data,  if this results to be compromising the objectives of the project (maybe using a complementary dataset). <br/> 2. List and plot for each products belonging in different categories,  their nutritional value, their package type, their nutritional score and the owner company.<br/> 3. For each country (if it's reasonable) visualize the products  with all the caracterstics found in point 2. | 1. Define an index that summarizes the impact of each product on environemnt and health,  based on the variables found the previous week. <br/> 2. Analysis based on the insight on the actual data. <br/> 3. Update the Readme file. |
-
-
-## Questions for TAs
-
-1. Is it possible to use the MongoDB as dataset? Is it feasible to import it on Spark or Pandas?
-2. Is it reasonable to search for country differences even if there are discrepancies in the number of products per country?
-3. Are the goals of our project broad enough? Are the research questions detailed enough?
-
+| 1. Check how to open the file in MongoDB formats <br/> 2. Data exploration: analyzing and cleaning data <br/> 3. Check if there is a large number of missing values for fields of interest <br/> 4. General statistics for the field of interest <br/> (number of products sold in different country,  number of products containing relevant nutritinal information) | 1. Find a way to handle the missing data,  if this results to be compromising the objectives of the project (maybe using a complementary dataset). <br/> 2. List and plot for each products belonging in different categories, their nutritional value, their nutritional score and the owner company.<br/> 3. Visualize the products sold in France with all the caracterstics found in point 2. | 1. Define an index that summarizes the impact of each product on environemnt and health,  based on the variables found the previous week. <br/> 2. Analysis based on the insight on the actual data. <br/> 3. Build a website for the datastory.|
 
 ## Milestone 2
 
@@ -48,5 +47,23 @@ A PCA analysis has been performed, but unfortunately it didn't turn out with any
 
 On the other hand, we also took a look at how the different products were sold around countries. It turns out that around 85% of the products were sold in France and in the USA, so we decided to shrink our analysis on just these two countries.
 Even more, we inspected the nutritional scores associated to those products and we realized that it was almost absent for the products sold in the USA, so just France was kept in the further analysis.
+
 We also cleaned the brands features using a list of [food brands present in France](https://www.frenchclick.co.uk/t-Brands.aspx) and we looked at the distribution of the nutrition grades among the whole dataset.
 Furthermore, we counted the nutrition grade occurences for each brand and we came up that most part of them use to sell 'junk ' food.
+
+## Milestone 3
+
+The final analysis pipeline is the following: 
+
+1. _Food Categorization_:
+2. _Food category VS Health_: we investigate the food categories w.r.t the nutritionnal scores of the products which belong to.
+3. _Brand VS Health_: we examine each french brands and see which one sell healthy / unhealthy products.
+4. _Palm oil_: we investigate which brands in france sell the more products containing palm oil. 
+5. _Product Advisor_: 
+
+The distribution of the work between the team mates is the following:
+ - Everybody did the preliminary analyis, the problem formulation, the cleaning of the dataset,  the datastory in html.
+ - Elisabetta: 1. + 5.
+ - Tom: 2. + 3. + 4.
+ - Micheal: 1. + 5.
+
