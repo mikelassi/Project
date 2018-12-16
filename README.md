@@ -5,27 +5,25 @@
 Food plays an essential role in our everyday life. However, we often underestimate its effect on our health and on the environment.
 Just thinking at how worldwide [obesity has nearly tripled since 1975](http://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) or how [palm oil consumption affects deforestation](https://www.independent.co.uk/life-style/palm-oil-health-impact-environment-animals-deforestation-heart-a8505521.html) makes us wonder whether it is possible to change our eating habits to improve our's and world's life conditions. 
 
-In order to move the first steps toward these changes, this projects has a double objective, pursued through the analysis of the [Open Food Facts](https://world.openfoodfacts.org/) database. First, it aims at giving insights on food categories that potentially are dangerous for the environment, for example by considering the package type or the presence of palm oil in it. The effect of possible monopolistic phenomena in food industry will also be analysed. Moreover, we will give nutritional scores for each product in various alimentation categories and we will assess the importance of some key nutrients (such as vitamins, cholesterol and others) in each product category.
-Finally, based on the previuos analysis, the idea is to create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
+In order to move the first steps toward these changes, this projects has a double objective, pursued through the analysis of the [Open Food Facts](https://world.openfoodfacts.org/) database. 
 
-## Research questions
+ - **OUR FIRST IDEAS** At the beginning of the project we wanted to:
+    + Give insights on food categories that potentially are dangerous for the environment, for example by considering the package type or the presence of palm oil in it.
+    + Investigate possible monopolistic situation in food industry e.g when one product category is only sold by some companies.
+    + Give nutritional scores for each product in various alimentation categories and we will assess the importance of some key nutrients (such as vitamins, cholesterol and others) in each product category.
+    + Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
 
-### Food for health
-
-1. Which indicators should be used as nutritional score?
-2. Is less healthy food mostly sold in certain countries?
-3. Are certain products made of the same ingredients?
-
-### Food for the planet
-1. Are certain food categories associated with high environmental damage?
-2. Are there companies that have monopoly of certain products?
-3. Are there countries that are more 'enviromental friendly'?
+ - **OUR FINAL PROJECT** We had to reconsider our objectives after investigating the dataset. The final goals are:
+    + Give insights on food categories regarding their nutrition content, impact on health (using a nutrition score called nutri-score) and their environmental impact (palm oil presence).
+    + Provide a complete analysis of food brands in France. Each brand will be examined regarding the category of products it sells, if their are healthy or not and if they contain ingredient from palm oil. The analysis will focus on the 10 biggest french brands.
+    + Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
 
 ## Dataset
 The dataset used is: Open Food Facts (1.83 Gb).
 The data can be downloaded in different formats, but we will choose the .csv or MongoDB dump format.
 
-The data set is composed of different fields: we'll filter the one we are interested in like 'nutriments', 'ingredients_from_palm_oil_tag', 'countries_tag','nutrition_levels'. In particular, information about the creator of the dataset entry, the creation time will be discarded.
+The data set is composed of different fields: we filter the one we are interested in like 'nutriments', 'ingredients_from_palm_oil_tag', 'countries_en', 'nutrition_grade_fr'. In particular, information about the creator of the dataset entry, the creation time will be discarded.
+
 To handle the missing data, we'll consider the 'state_tags' field that indicates which other fields are missing.
 Moreover, we notice that most of listed products come from either France or USA. Hence, since this could compromise cross country analysis, we will either extend the dataset or avoid considering absolute counts of products.
 
