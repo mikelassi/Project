@@ -10,17 +10,17 @@ In order to move the first steps toward these changes, this projects has a doubl
  - **OUR FIRST IDEAS** 
  
  At the beginning of the project we wanted to:
- + Give insights on food categories that potentially are dangerous for the environment, for example by considering the package type or the presence of palm oil in it.
- + Investigate possible monopolistic situation in food industry e.g when one product category is only sold by some companies.
- + Give nutritional scores for each product in various alimentation categories and we will assess the importance of some key nutrients (such as vitamins, cholesterol and others) in each product category.
- + Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
+ 1. Give insights on food categories that potentially are dangerous for the environment, for example by considering the package type or the presence of palm oil in it.
+ 2. Investigate possible monopolistic situation in food industry e.g when one product category is only sold by some companies.
+ 3. Give nutritional scores for each product in various alimentation categories and we will assess the importance of some key nutrients (such as vitamins, cholesterol and others) in each product category.
+ 4. Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
 
  - **OUR FINAL PROJECT** 
  
  We had to reconsider our objectives after investigating the dataset (missing values, countries presence ect.). The final goals are:
- + Give insights on food categories regarding their nutrition content, impact on health (using a nutrition score called nutri-score) and their environmental impact (palm oil presence).
- + Provide a complete analysis of food brands in France. Each brand will be examined regarding the category of products it sells, if their are healthy or not and if they contain ingredient from palm oil. The analysis will focus on the 10 biggest french brands.
- + Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
+1. Give insights on food categories regarding their nutrition content, impact on health (using a nutrition score called nutri-score) and their environmental impact (palm oil presence).
+2. Provide a complete analysis of food brands in France. Each brand will be examined regarding the category of products it sells, if their are healthy or not and if they contain ingredient from palm oil. The analysis will focus on the 10 biggest french brands.
+3. Create a food advisor that can help consumers choose the best product in a given category based on their nutritional data and their impact to the environment. 
 
 ## Dataset
 The dataset used is: Open Food Facts (1.83 Gb).
