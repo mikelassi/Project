@@ -55,18 +55,19 @@ Furthermore, we counted the nutrition grade occurences for each brand and we cam
 
 The final analysis pipeline is the following: 
 
-1. _Food Categorization_:
-2. _Food category VS Health_: we investigate the food categories w.r.t the nutritionnal scores of the products which belong to.
-3. _Brand VS Health_: we examine each french brands and see which one sell healthy / unhealthy products.
-4. _Palm oil_: we investigate which brands in france sell the more products containing palm oil. 
-5. _Product Advisor_: 
+1. _Food Categorization_: we explain how we define 9 food categories.
+2. _Score category_ : we define how we can compute a score for each products regarding its nutritional score, the energy it represents, the presence of palm oil.
+3. _Product Advisor_: choose the best product for your health giving a category ! 
+4. _Nutrition values vs food categories in France_: we investigate the food categories w.r.t the nutritionnal scores of the products which belong to.
+5. _Nutrition values vs brands in France_: we examine each french brands and see which one sell healthy / unhealthy products.
+6. _Palm oil vs brands in France_: we investigate which brands in France sell the more products containing palm oil. 
 
 The final data story can be found here: [_Food for Thought_](https://elisabettaaa.github.io/).
 
 The distribution of the work between the team mates is the following:
  - Everybody did the preliminary analyis, the problem formulation, the cleaning of the dataset,  the datastory in html.
- - Elisabetta: 1. + 5.
- - Tom:        2. + 3. + 4.
- - Michael:    1. + 5.
+ - Elisabetta: 1. + 2. + 3.
+ - Tom:        4. + 5. + 6.
+ - Michael:    1. + 2. + 3.
 
 Everybody will work on the presentation.
