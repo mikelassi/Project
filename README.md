@@ -61,11 +61,11 @@ The final analysis pipeline is the following:
 4. _Palm oil_: we investigate which brands in france sell the more products containing palm oil. 
 5. _Product Advisor_: 
 
-The data story can be found here: [FINAL DATA STORY: _Food for Thought_](https://elisabettaaa.github.io/).
+The final data story can be found here: [_Food for Thought_](https://elisabettaaa.github.io/).
 
 The distribution of the work between the team mates is the following:
  - Everybody did the preliminary analyis, the problem formulation, the cleaning of the dataset,  the datastory in html.
  - Elisabetta: 1. + 5.
- - Tom: 2. + 3. + 4.
- - Micheal: 1. + 5.
+ - Tom:        2. + 3. + 4.
+ - Micheal:    1. + 5.
 
