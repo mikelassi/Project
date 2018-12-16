@@ -69,3 +69,4 @@ The distribution of the work between the team mates is the following:
  - Tom:        2. + 3. + 4.
  - Micheal:    1. + 5.
 
+Everybody will work on the presentation.
